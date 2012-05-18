@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Input jQuery Plugin</title>
+
+    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../jquery.input.js"></script>
+
+    <script>
+    $(function() {
+      $('#textarea').input(function() {
+        $('#debug').prepend((this.value || '(empty)') + '<br><br>');
+      });
+    });
+    </script>
+  </head>
+  <body>
+
+    <textarea id="textarea" cols="40" rows="5"></textarea>
+
+    <div id="debug" style="width: 330px; height: 330px; overflow: auto; margin: 10px 0; padding: 5px; border: 1px solid #ccc;"></div>
+
+  </body>
+</html>
