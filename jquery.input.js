@@ -1,5 +1,5 @@
 /*
- * Input jQuery Plugin
+ * Input jQuery Plugin v0.1
  *
  * Copyright (c) 2012 Thibaut Courouble
  * http://thibaut.me
